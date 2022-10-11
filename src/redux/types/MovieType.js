@@ -1,0 +1,5 @@
+export const GET_MOVIE_LIST = 'GET_MOVIE_LIST';
+export const GET_MOVIE_SHOW = 'GET_MOVIE_SHOW';
+export const GET_MOVIE_COMMING = 'GET_MOVIE_COMMING';
+
+export const GET_THONG_TIN_PHIM = 'GET_THONG_TIN_PHIM';

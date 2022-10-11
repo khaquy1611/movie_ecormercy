@@ -1,0 +1,58 @@
+{
+  "globals": {
+    "process": true
+  },
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:prettier/recommended",
+    "plugin:import/errors", 
+    "plugin:import/warnings"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 80,
+        "trailingComma": "es5",
+        "proseWrap": "never",
+        "semi": true,
+        "endOfLine": "auto",
+        "bracketSameLine": false,
+        "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+        "no-unused-vars": ["error"],
+        "arrowParens": "always",
+        "singleQuote": true
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+    ]
+  }
+}

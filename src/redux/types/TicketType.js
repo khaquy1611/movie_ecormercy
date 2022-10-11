@@ -1,0 +1,7 @@
+export const SET_DETAIL_ROOM_TICKET = 'SET_DETAIL_ROOM_TICKET';
+
+export const BOOK_TICKET = 'BOOK_TICKET';
+
+export const BOOK_COMPLEATE = 'BOOK_COMPLEATE';
+
+export const CHANGE_TAB = 'CHANGE_TAB';

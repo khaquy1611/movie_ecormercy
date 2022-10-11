@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body {
+    overflow-x: hidden ;
+}
+.ant-drawer-body ul.items-center > li {
+    text-indent: 20px!important;
+    margin: 20px 0!important;
+}
